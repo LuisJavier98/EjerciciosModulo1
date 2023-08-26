@@ -6,6 +6,7 @@ public class Ejercicio1 {
     int numero = input.nextInt();
     int pago = (numero > 40 ? 40 : numero) * 40 + (numero > 40 ? ((numero > 40 && numero < 48 ? numero - 40 : 8) * 80
         + (numero > 48 ? numero - 48 : 0) * 120) : 0);
+        input.close();
     System.out.println("El dinero que recibirá es " + pago);
   }
 }
